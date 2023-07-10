@@ -3,7 +3,7 @@ import CalcRoute from './routes/CalcRoute.js'
 import express from 'express';
 import cors from 'cors'
 
-const PORT = 8888;
+const PORT = process.env.PORT || 8888;
 const app = express();
 
 app.use(cors())
